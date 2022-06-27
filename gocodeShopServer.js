@@ -167,9 +167,9 @@ app.delete("/api/products/:id", (req, res) => {
 //   });
 // });
 
-// app.get("*", (req, res) => {
-//   res.sendFile("/client/build/index.html");
-// });
+app.get("*", (req, res) => {
+  res.sendFile("/client/build/index.html");
+});
 
 const { DB_NAME, DB_HOST, DB_USER, DB_PASS } = process.env;
 const PORT = process.env.PORT || 8000;
